@@ -16,11 +16,7 @@ public class InfoController {
 	private InfoService infoService;
 	
 	@RequestMapping("/{estado}")
-//	@GetMapping
 	public InfoFornecedor getInfoPorEstado(@PathVariable String estado) {
-		
 		return infoService.getInfoPorEstado(estado);
-		
 	}
-
 }
